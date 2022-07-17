@@ -1,20 +1,20 @@
-*{
+* {
     box-sizing: border-box;
 }
-body{
+body {
     margin: 0;
     font-family: 'Roboto', sans-serif;
 }
-html{
+html {
     scroll-behavior: smooth;
 }
-h1{ font-size: 3.5em;}
-h2{ font-size: 2.5em;}
-h3{ font-size: 2em;}
-p{ font-size: 1.25em;}
-ul{list-style: none;}
+h1 { font-size: 3.5em;}
+h2 { font-size: 2.5em;}
+h3 { font-size: 2em;}
+p { font-size: 1.25em;}
+ul {list-style: none;}
 
-button{
+button {
     font-size: 1.5em;
     font-weight: bold;
     padding: 10px 20px;
@@ -24,26 +24,26 @@ button{
     background-color: darkorange;
 }
 
-button:hover{
+button:hover {
     cursor: pointer;
     background-color: rgb(204, 115, 6);
 
 }
 
-.container{
+.container {
     max-width: 1400px;
     margin: auto;
 }
 
-.color-palabra{
+.color-palabra {
     color: darkorange;
 }
 
-header{
+header  {
     background-color: rgb(240, 240, 240);
 }
 
-header .logo{
+header .logo {
     margin: 0;
     padding: 5px 30px;
     font-weight: bold;
@@ -51,46 +51,43 @@ header .logo{
     font-size: 1.5em;
 }
 
-header .container{
+header .container {
     display: flex;
     flex-direction: column;
     align-items: center;
-    
 }
 
-header nav{
+header nav {
     display: flex;
     flex-direction: column;
     text-align: center;
     padding-bottom: px;
-
 }
 
-header img{
+header img {
   display: none;
 }
 
-header a{
+header a {
     text-decoration: none;
     font-weight: bold;
     color: black;
     padding: 5px 12px ;
 }
 
-header .logo a{
+header .logo a {
     color: darkorange;
 }
 
-header .logo a:hover{
+header .logo a:hover {
     color: black;
 }
 
-
-header a:hover{
+header a:hover {
     color:darkorange;
 }
 
-#hero{
+#hero {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -104,92 +101,88 @@ header a:hover{
     background-size: cover;
     background-position: center center;
 }
-#hero h1{
+
+#hero h1 {
     color: white;
 }
 
-#hero button{
+#hero button {
     font-size: 1.75em;
 }
-#hero a{
+#hero a {
     text-decoration: none;
     color: white;
 }
 
-#somos-masalla .container{
+#somos-masalla .container {
     text-align: center;
     padding: 200px 12px;
 }
 
-#somos-masalla a{
+#somos-masalla a {
     color: white;
     text-decoration: none;
 }
 
-#nuestras-actividades .container{
+#nuestras-actividades .container { 
     padding: 100px 12px;
 }
 
-#nuestras-actividades h2{
+#nuestras-actividades h2 {
     margin-top: 0;
     font-size: 3.3em;
 }
 
-#nuestras-actividades{
+#nuestras-actividades {
     background-color: rgb(30,30,30);
     color: white;
     text-align: center;
     background-size: cover;
-
 }
 
 #nuestras-actividades p {
     display: none;
 }
 
-#nuestras-actividades{
+#nuestras-actividades {
     padding: 25px 0;
   
 }
 
-
-.carta:first-child{
+.carta:first-child {
     background-image: linear-gradient(0deg, rgba(0,0,0,0.5), rgba(0,0,0,0.5))
     ,url('fotos mas alla/camion.jpg');
     background-size: cover;
     background-position: center center;
 }
 
-.carta:nth-child(2){
+.carta:nth-child(2) {
     background-image: linear-gradient(0deg, rgba(0,0,0,0.5), rgba(0,0,0,0.5))
     ,url('fotos mas alla/cavsi.jpg');
-
     background-size: cover;
     background-position: center center;
-    
 }
 
-.carta:nth-child(3){
+.carta:nth-child(3) {
     background-image: linear-gradient(0deg, rgba(0,0,0,0.5), rgba(0,0,0,0.5))
     ,url('https://lanoticiadequilmes.com.ar/fotos/PHOTO-2020-04-06-09-50-53.jpg');
     background-size: cover;
     background-position: center center;
-
 }
 
-#caracteristicas .container{
+#caracteristicas .container {
     text-align: center;
     padding: 200px 12px;
 }
 
-#caracteristicas li{
+#caracteristicas li {
     margin: 15px 0;
     font-weight: bold;
     font-size: 2em;
 }
 
 
-#Donaciones{
+#Donaciones {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -204,52 +197,52 @@ header a:hover{
     height: 80vh;
 }
 
-#Donaciones button{
+#Donaciones button {
     font-size: 5vw;
 }
 
-#Donaciones h2{
+#Donaciones h2 {
     font-size: 9vw;
 }
 
-#Donaciones a{
+#Donaciones a {
     color:white;
     text-decoration: none;
 }
 
-footer{
+footer {
     background-color: rgb(230,230, 230);   
 }
 
-footer p{
+footer p {
     margin: 0;
     color: rgb(100,100, 100);
     padding: 5px;
 }
 
-
-footer .container{
+footer .container {
     height: 75px;
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
 }
 
+@media(min-width:720px ) {
 
-@media(min-width:720px ){
-    header{
+    header {
         position: fixed;
         width: 100%;
     }
-    header .container{
+
+    header .container {
         flex-direction: row;
         justify-content:space-between;
     }
-    header nav{
+
+    header nav {
         flex-direction: row;
         padding-bottom: 0;
         padding-right: 20px;
-
     }
 
     header .container .logo{
@@ -264,17 +257,16 @@ footer .container{
         margin-left: 20px;
     }
 
-    #hero h1{
+    #hero h1 {
         font-size: 4.5em;
     }
 
-    #somos-masalla .container{
+    #somos-masalla .container {
         display: flex;
         justify-content: space-evenly;
-        
     }
 
-    #somos-masalla .texto{
+    #somos-masalla .texto {
         width: 50%;
         text-align: initial;
         padding-left: 30px;
@@ -285,57 +277,53 @@ footer .container{
         justify-content: center;
     }
 
-    #somos-masalla h2{
+    #somos-masalla h2 {
         margin-top: 0;
     }
 
-    #somos-masalla .img-container{
+    #somos-masalla .img-container {
         background-image: url('fotos mas alla/masalla.jpg');
         background-position: center center;
         background-size: cover;
         height: 500px;
         width: 400px;
-
     }
 
-    #somos-masalla button{
+    #somos-masalla button {
         font-size: 1.7em;
     }
 
-    #somos-masalla a{
+    #somos-masalla a {
         color: white;
         text-decoration: none;
     }
 
-    #nuestras-actividades .actividades{
+    #nuestras-actividades .actividades {
         display: flex;
         justify-content: center;
-    
-
     }
-    #nuestras-actividades p{
+
+    #nuestras-actividades p {
         display: block;
         margin-bottom: 30px;
     }
 
-    #nuestras-actividades h3{
+    #nuestras-actividades h3 {
         margin-top: 0;
     }
 
-    #nuestras-actividades .carta{
+    #nuestras-actividades .carta {
         border-radius: 20px;
         margin: 15px;
         padding: 20px;
     }
-
-
-
-    #caracteristicas .container{
+    
+    #caracteristicas .container {
         display: flex;
         justify-content: space-evenly;
     }
 
-    #caracteristicas .texto2{
+    #caracteristicas .texto2 {
         width: 50%;
         text-align: initial;
         padding-left: 30px;
@@ -346,7 +334,7 @@ footer .container{
         justify-content: center;
     }
 
-    #caracteristicas .img-container{
+    #caracteristicas .img-container { 
         background-image: url('fotos mas alla/maestra.jpg');
         background-position: center center;
         background-size: cover;
@@ -354,23 +342,21 @@ footer .container{
         width: 400px;
     }
 
-    #caracteristicas ul{
+    #caracteristicas ul {
         margin-left: 100px;
-        
     }
 
-    #Donaciones h2{
+    #Donaciones h2 {
         font-size: 4em;
     }
 
-    #Donaciones button{
+    #Donaciones button {
         font-size: 2em;
     }
 
-    #footer .container{
+    #footer .container {
         display: flex;
         align-items:flex-start;
     }
-
 }
 
