@@ -19,7 +19,7 @@ button {
     font-weight: bold;
     padding: 10px 20px;
     border-radius: 5px;
-    border: solid #000 0.5;
+    border: none;
     color: white;
     background-color: darkorange;
 }
@@ -141,12 +141,16 @@ header a:hover {
 }
 
 #nuestras-actividades p {
-    display: none;
+    display: ;
+    padding: 5px;
 }
 
 #nuestras-actividades {
     padding: 25px 0;
-  
+}
+
+#nuestras-actividades button {
+    display: none;   
 }
 
 .carta:first-child {
@@ -158,7 +162,7 @@ header a:hover {
 
 .carta:nth-child(2) {
     background-image: linear-gradient(0deg, rgba(0,0,0,0.5), rgba(0,0,0,0.5))
-    ,url('fotos mas alla/cavsi.jpg');
+    ,url('fotos mas alla/Vianda.jpg');
     background-size: cover;
     background-position: center center;
 }
@@ -182,7 +186,7 @@ header a:hover {
 }
 
 
-#Donaciones {
+#Final-section {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -197,15 +201,16 @@ header a:hover {
     height: 80vh;
 }
 
-#Donaciones button {
+#Final-section button {
     font-size: 5vw;
+    display: none;
 }
 
-#Donaciones h2 {
+#Final-section h2 {
     font-size: 9vw;
 }
 
-#Donaciones a {
+#Final-section a {
     color:white;
     text-decoration: none;
 }
@@ -282,11 +287,11 @@ footer .container {
     }
 
     #somos-masalla .img-container {
-        background-image: url('fotos mas alla/masalla.jpg');
+        background-image: url('fotos mas alla/masallablanco.jpg');
         background-position: center center;
         background-size: cover;
         height: 500px;
-        width: 400px;
+        width: 450px;
     }
 
     #somos-masalla button {
@@ -306,6 +311,7 @@ footer .container {
     #nuestras-actividades p {
         display: block;
         margin-bottom: 30px;
+        padding: 0;
     }
 
     #nuestras-actividades h3 {
@@ -346,11 +352,11 @@ footer .container {
         margin-left: 100px;
     }
 
-    #Donaciones h2 {
+    #Final-section h2 {
         font-size: 4em;
     }
 
-    #Donaciones button {
+    #Final-section button {
         font-size: 2em;
     }
 
