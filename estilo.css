@@ -176,8 +176,8 @@ header a:hover {
 
 #Donaciones .container {
     text-align: center;
-    padding: 100px 12px;
-    margin: 10px;
+    padding: 20px;
+    margin:10px ;
 }
 
 #Donaciones h2 {
@@ -187,6 +187,7 @@ header a:hover {
 #Donaciones li {
     font-weight: bold;
     margin: 10px 0;
+    margin-right: 30px;
 }
 
 #Donaciones a{
@@ -205,19 +206,23 @@ header a:hover {
 }
 
 #financiacion .container{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    text-align: center;
+    padding: 100px 12px;
 }
 
 #financiacion .text{
-    margin: 10px;
+    margin: 20px 10px;
     text-align: center;
+    padding: 10px;
+}
+
+#financiacion li button{
+    margin-top: 10px;
 }
 
 #financiacion .img-container {
-    width: 100%;
+    display: none;
+    width: 50%;
     height: 350px;
     background-image: url('fotos mas alla/financiacion.jpg');
     background-position: center center;
@@ -226,21 +231,23 @@ header a:hover {
 }
 
 #financiacion h3{
-    font-size: 25px;
+    font-size: 20px;
 }
 
 #financiacion li{
-    font-size: 25px;
-    margin: 5px 0;
-    font-weight: bold;
+    font-size: 18px;
+    margin: 10px 0;
     text-align: left;
-    margin-left: 30px;
+}
 
+#financiacion h2{
+    font-size: 25px;
 }
 
 #financiacion p{
-    font-size: 25px;
+    font-size: 18px;
 }
+
 
 #financiacion button a{
     color: white;
@@ -427,9 +434,50 @@ footer .container {
         font-size: 20px;
     }
 
-    #financiacion li{
-        text-align: center;
+    #financiacion .container{
+        display: flex;
+        justify-content: space-evenly;
     }
+
+    #financiacion .text{
+        width: 50%;
+        text-align: center;
+        padding-left: 30px;
+        max-width: 600px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #financiacion .img-container{
+        display: flex;
+        background-image: url('fotos mas alla/financiacion.jpg');
+        background-position: center center;
+        background-size: cover;
+        height: 80vh;
+        width: 50%;
+    }
+    
+    #financiacion h2{
+        font-size: 30px;
+    }
+
+    #financiacion p {
+        font-size: 20px;
+        margin: 10px;
+    }
+
+    #financiacion li {
+        text-align: center;
+        font-size: 18px;
+    }
+
+    #financiacion li button{
+        margin-left: 0;
+        margin-top: 10px;
+    }
+    
 
     #Final-section h2 {
         font-size: 4em;
