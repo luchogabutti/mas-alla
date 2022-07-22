@@ -61,7 +61,7 @@ header nav {
     display: flex;
     flex-direction: column;
     text-align: center;
-    padding-bottom: px;
+    padding-bottom: 10px;
 }
 
 header img {
@@ -116,7 +116,7 @@ header a:hover {
 
 #somos-masalla .container {
     text-align: center;
-    padding: 200px 12px;
+    padding: 100px 12px;
 }
 
 #somos-masalla a {
@@ -150,9 +150,14 @@ header a:hover {
 }
 
 #nuestras-actividades button {
+    margin-bottom: 10px;
     display: none;   
 }
 
+#nuestras-actividades button a{
+    color: white;
+    text-decoration: none;
+}
 .carta:first-child {
     background-image: linear-gradient(0deg, rgba(0,0,0,0.5), rgba(0,0,0,0.5))
     ,url('fotos mas alla/camion.jpg');
@@ -176,8 +181,7 @@ header a:hover {
 
 #Donaciones .container {
     text-align: center;
-    padding: 20px;
-    margin:10px ;
+    padding: 100px 12px;
 }
 
 #Donaciones h2 {
@@ -185,6 +189,7 @@ header a:hover {
 }
 
 #Donaciones li {
+    text-align: center;
     font-weight: bold;
     margin: 10px 0;
     margin-right: 30px;
@@ -270,11 +275,6 @@ header a:hover {
     height: 80vh;
 }
 
-#Final-section button {
-    font-size: 5vw;
-    display: none;
-}
-
 #Final-section h2 {
     font-size: 9vw;
 }
@@ -300,6 +300,25 @@ footer .container {
     justify-content: flex-end;
     align-items: flex-end;
 }
+
+#viajes {
+    background-image: linear-gradient(0deg, rgba(0,0,0,0.8), rgba(0,0,0,0.5)),url('fotos mas alla/camion.jpg'); 
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+#viajes .container{
+    text-align: center;
+    padding: 50px 12px;
+    margin-top: 0;
+}
+
+
 
 @media(min-width:720px ) {
 
@@ -483,13 +502,40 @@ footer .container {
         font-size: 4em;
     }
 
-    #Final-section button {
-        font-size: 2em;
-    }
-
     #footer .container {
         display: flex;
         align-items:flex-start;
     }
+
+    #viajes{
+        background-image: none;
+    }
+
+    #viajes .container {
+        display: flex;
+        justify-content: space-evenly;
+        margin-top: 75px;
+    }
+
+    #viajes .text {
+        width: 50%;
+        text-align: initial;
+        padding-left: 30px;
+        max-width: 600px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        color: black;
+    }
+
+    #viajes .img-container{
+        background-image: url('fotos mas alla/camion.jpg');
+        background-position: center center;
+        background-size: cover;
+        height: 500px;
+        width: 450px;
+    }
 }
+
 
