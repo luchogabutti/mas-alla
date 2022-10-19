@@ -54,6 +54,7 @@ header .container {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
 }
 
 header nav {
@@ -172,6 +173,11 @@ header a:hover {
 #nuestras-actividades button a{
     color: white;
     text-decoration: none;
+}
+
+.carta {
+    border-radius: 10px;
+    margin: 0 10px;
 }
 .carta:first-child {
     background-image: linear-gradient(0deg, rgba(0,0,0,0.5), rgba(0,0,0,0.5))
