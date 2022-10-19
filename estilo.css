@@ -27,7 +27,6 @@ button {
 button:hover {
     cursor: pointer;
     background-color: rgb(204, 115, 6);
-
 }
 
 .container {
@@ -343,7 +342,7 @@ footer .container {
 
 #viajes {
     padding: 10px;
-    background-color: rgb(245, 245, 210);
+    background-color: #fff;
 }
 
 #viajes .text {
@@ -366,7 +365,7 @@ footer .container {
 
 #viandas {
     padding: 10px;
-    background-color: rgb(245, 245, 210);
+    background-color: #fff;
 }
 
 #viandas .text {
@@ -388,7 +387,7 @@ footer .container {
 
 #asistencia {
     padding: 10px;
-    background-color: rgb(245, 245, 210);
+    background-color: #fff;
 }
 
 #asistencia .text {
@@ -415,7 +414,7 @@ footer .container {
 
 #ideas {
     padding: 10px;
-    background-color: rgb(245, 245, 210);
+    background-color: #fff;
 }
 
 #ideas .text {
@@ -442,7 +441,7 @@ footer .container {
 
 #campanas {
     padding: 10px;
-    background-color: rgb(245, 245, 210);
+    background-color: #fff;
 }
 
 #campanas .text {
