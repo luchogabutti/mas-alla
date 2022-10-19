@@ -15,9 +15,9 @@ p { font-size: 1.25em;}
 ul {list-style: none;}
 
 button {
-    font-size: 1.5em;
+    font-size: 22px;
     font-weight: bold;
-    padding: 10px 20px;
+    padding: 10px 10px;
     border-radius: 5px;
     border: none;
     color: white;
@@ -93,7 +93,7 @@ header a:hover {
     align-items: center;
     flex-direction: column;
     text-align: center;
-    height: 90vh;
+    height: 120vh;
     color: white;
     background-image: linear-gradient(0deg, rgba(0,0,0,0.5), rgba(0,0,0,0.5))
     ,url('fotos mas alla/fotofede.jpg');
@@ -108,20 +108,37 @@ header a:hover {
 
 #hero button {
     font-size: 1.75em;
+    display: none;
 }
 #hero a {
     text-decoration: none;
     color: white;
 }
+.iconos img {
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    margin: 10px;
+    margin-top: 15px;
+}
+.iconos {
+    display: flex;
+    justify-content: space-between;
+}
 
 #somos-masalla .container {
     text-align: center;
     padding: 100px 12px;
+    background-color: rgb(240, 240, 203);
 }
 
 #somos-masalla a {
     color: white;
     text-decoration: none;
+}
+
+#somos-masalla button {
+    display: none;
 }
 
 #nuestras-actividades .container { 
@@ -141,17 +158,16 @@ header a:hover {
 }
 
 #nuestras-actividades p {
-    display: ;
     padding: 5px;
+    display: none;
 }
 
 #nuestras-actividades {
-    padding: 25px 0;
+    padding: 15px 0;
 }
 
 #nuestras-actividades button {
     margin-bottom: 10px;
-    display: none;   
 }
 
 #nuestras-actividades button a{
@@ -167,7 +183,7 @@ header a:hover {
 
 .carta:nth-child(2) {
     background-image: linear-gradient(0deg, rgba(0,0,0,0.5), rgba(0,0,0,0.5))
-    ,url('fotos mas alla/Vianda.jpg');
+    ,url('fotos mas alla/agus.JPG');
     background-size: cover;
     background-position: center center;
 }
@@ -179,11 +195,34 @@ header a:hover {
     background-position: center center;
 }
 
+.carta:nth-child(4) {
+    background-image: linear-gradient(0deg, rgba(0,0,0,0.5), rgba(0,0,0,0.5))
+    ,url('fotos mas alla/atardecer.jpg');
+    background-size: cover;
+    background-position: center center;
+}
+
+.carta:nth-child(5) {
+    background-image: linear-gradient(0deg, rgba(0,0,0,0.5), rgba(0,0,0,0.5))
+    ,url('fotos mas alla/ideas.JPG');
+    background-size: cover;
+    background-position: center center;
+}
+
+
+
 #Donaciones .container {
     text-align: center;
     padding: 100px 12px;
+    background-color: #fff;
 }
 
+.texto2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
 #Donaciones h2 {
     color: darkorange;
 }
@@ -191,8 +230,8 @@ header a:hover {
 #Donaciones li {
     text-align: center;
     font-weight: bold;
-    margin: 10px 0;
-    margin-right: 30px;
+    margin: 5px;
+    margin-left: -50px;
 }
 
 #Donaciones a{
@@ -233,6 +272,7 @@ header a:hover {
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
+    border-radius: 10px;
 }
 
 #financiacion h3{
@@ -302,23 +342,130 @@ footer .container {
 }
 
 #viajes {
-    background-image: linear-gradient(0deg, rgba(0,0,0,0.8), rgba(0,0,0,0.5)),url('fotos mas alla/camion.jpg'); 
-    background-size: cover;
+    padding: 10px;
+    background-color: rgb(245, 245, 210);
+}
+
+#viajes .text {
+    padding: 10px;
+    text-align: center;
+}
+
+#viajes .container{ 
+   display: flex;
+   flex-direction: column-reverse;
+   align-items: center;
+   justify-content: center;
+}
+
+
+#viajes video {
+  height: 550px;
+  border-radius: 10px;
+}
+
+#viandas {
+    padding: 10px;
+    background-color: rgb(245, 245, 210);
+}
+
+#viandas .text {
+    padding: 10px;
+    text-align: center;
+}
+
+#viandas .container{ 
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+}
+
+#viandas video {
+  height: 550px;
+  border-radius: 10px;
+}
+
+#asistencia {
+    padding: 10px;
+    background-color: rgb(245, 245, 210);
+}
+
+#asistencia .text {
+    padding: 10px;
+    text-align: center;
+}
+
+#asistencia .container { 
+   display: flex;
+   flex-direction: column-reverse;
+   align-items: center;
+   justify-content: center;
+}
+
+#asistencia .img-container {
+    background-image: url("fotos mas alla/idolo.JPG");
     background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 300px;
+    width: 300px;
+    border-radius: 10px;
+}
+
+#ideas {
+    padding: 10px;
+    background-color: rgb(245, 245, 210);
+}
+
+#ideas .text {
+    padding: 10px;
+    text-align: center;
+}
+
+#ideas .container { 
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
     align-items: center;
-    text-align: center;
-    color: white;
+    justify-content: center;
+ }
+ 
+#ideas .img-container {
+    background-image: url("fotos mas alla/ideas-2.JPG");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 300px;
+    width: 300px;
+    border-radius: 10px;
 }
 
-#viajes .container{
-    text-align: center;
-    padding: 50px 12px;
-    margin-top: 0;
+#campanas {
+    padding: 10px;
+    background-color: rgb(245, 245, 210);
 }
 
+#campanas .text {
+    padding: 10px;
+    text-align: center;
+}
 
+#campanas .container {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+}
+
+#campanas .img-container {
+    background-image: url("fotos mas alla/camapanas-2.JPG");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 300px;
+    width: 300px;
+    border-radius: 10px;
+}
 
 @media(min-width:720px ) {
 
@@ -350,6 +497,10 @@ footer .container {
         margin-left: 20px;
     }
 
+    #hero {
+        height: 100vh;
+    }
+
     #hero h1 {
         font-size: 4.5em;
     }
@@ -357,12 +508,13 @@ footer .container {
     #somos-masalla .container {
         display: flex;
         justify-content: space-evenly;
+        background-color: #fff;
     }
 
     #somos-masalla .texto {
         width: 50%;
-        text-align: initial;
-        padding-left: 30px;
+        text-align: center;
+        padding-left: 10px;
         max-width: 600px;
         display: flex;
         align-items: center;
@@ -395,10 +547,11 @@ footer .container {
     #nuestras-actividades .actividades {
         display: flex;
         justify-content: center;
+
     }
 
     #nuestras-actividades p {
-        display: block;
+        display: none;
         margin-bottom: 30px;
         padding: 0;
     }
@@ -410,7 +563,8 @@ footer .container {
     #nuestras-actividades .carta {
         border-radius: 20px;
         margin: 15px;
-        padding: 20px;
+        padding: 35px;
+        width: 300px;
     }
     
     #Donaciones .container {
@@ -439,6 +593,7 @@ footer .container {
         background-size: cover;
         height: 600px;
         width: 400px;
+        border-radius: 10px;
     }
 
     #Donaciones ul {
@@ -485,10 +640,11 @@ footer .container {
     #financiacion p {
         font-size: 20px;
         margin: 10px;
+        text-align: left;
     }
 
     #financiacion li {
-        text-align: center;
+        text-align: left;
         font-size: 18px;
     }
 
@@ -497,7 +653,6 @@ footer .container {
         margin-top: 10px;
     }
     
-
     #Final-section h2 {
         font-size: 4em;
     }
@@ -507,35 +662,147 @@ footer .container {
         align-items:flex-start;
     }
 
-    #viajes{
-        background-image: none;
-    }
-
     #viajes .container {
         display: flex;
+        flex-direction: row-reverse;
         justify-content: space-evenly;
-        margin-top: 75px;
-    }
-
-    #viajes .text {
-        width: 50%;
-        text-align: initial;
-        padding-left: 30px;
-        max-width: 600px;
-        display: flex;
         align-items: center;
-        flex-direction: column;
-        justify-content: center;
-        color: black;
+        margin-top: 65px;
     }
 
-    #viajes .img-container{
-        background-image: url('fotos mas alla/camion.jpg');
-        background-position: center center;
-        background-size: cover;
-        height: 500px;
+    #viajes video {
+        height: 525px;
+        margin-right: 20px;
+        border-radius: 10px;
+    }
+    
+    #viajes .text {
+        width: 42%;
+        text-align: left;
+    }
+
+    .presentacion {
+        display: none;
+    }
+    
+    #viandas .container {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: center;
+        align-items: center;
+        margin-top: 65px;
+        padding: 20px 0;
+    }
+
+    #viandas .text {
+        width: 50%;
+        margin-left: 35px;
+    }
+
+    #viandas video {
+        height: 475px;
+        border-radius: 10px;
+    }
+    
+    #viandas .container {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: center;
+        align-items: center;
+        margin-top: 65px;
+        padding: 20px 0;
+    }
+
+    #viandas .text {
+        width: 50%;
+        margin-left: 35px;
+    }
+
+    #viandas .text p {
+        text-align: left;
+    }
+
+    #viandas video {
+        height: 475px;
+        border-radius: 10px;
+    }
+    
+    #asistencia .container {
+            display: flex;
+            flex-direction: row-reverse;
+            justify-content: center;
+            align-items: center;
+            margin-top: 65px;
+            padding: 20px 0;
+    }
+    
+    #asistencia .text {
+            width: 50%;
+            text-align: center;
+            margin-right: 35px;
+    }
+
+    #asistencia .text p {
+        text-align: left;
+    }
+    
+    #asistencia .img-container {
+            height: 475px;
+            width: 450px;
+            border-radius: 10px;
+    }
+
+    #ideas .container {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: center;
+        align-items: center;
+        margin-top: 65px;
+        padding: 20px 0;
+    }
+
+    #ideas .img-container {
+        height: 475px;
         width: 450px;
+        border-radius: 10px;
+    }        
+
+    #ideas .text {
+        width: 50%;
+        text-align: center;
+        margin-right: 35px;
+    }
+    
+    #ideas .text p {
+        text-align: left;
+    }
+
+    #campanas .container {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: center;
+        align-items: center;
+        margin-top: 65px;
+        padding: 20px 0;
+    }
+
+    #campanas .img-container {
+        height: 475px;
+        width: 450px;
+        border-radius: 10px;
+    }
+
+    #campanas .text {
+        width: 50%;
+        text-align: center;
+        margin-right: 35px;
+    }
+
+    #campanas .text p {
+        text-align: left;
     }
 }
+
+
 
 
