@@ -1,6 +1,7 @@
 * {
     box-sizing: border-box;
 }
+
 body {
     margin: 0;
     font-family: 'Roboto', sans-serif;
@@ -8,6 +9,7 @@ body {
 html {
     scroll-behavior: smooth;
 }
+
 h1 { font-size: 3.5em;}
 h2 { font-size: 2.5em;}
 h3 { font-size: 2em;}
@@ -18,7 +20,17 @@ button {
     font-size: 22px;
     font-weight: bold;
     padding: 10px 10px;
-    border-radius: 5px;
+    border-radius: 10px;
+    border: none;
+    color: white;
+    background-color: darkorange;
+}
+
+.btn-cards {
+    font-size: 22px;
+    font-weight: bold;
+    padding: 10px 10px;
+    border-radius: 10px;
     border: none;
     color: white;
     background-color: darkorange;
@@ -42,7 +54,7 @@ header  {
     background-color: rgb(240, 240, 240);
 }
 
-header .logo {
+.container-fluid .logo {
     margin: 0;
     padding: 5px 30px;
     font-weight: bold;
@@ -57,22 +69,30 @@ header .container {
     justify-content: center;
 }
 
-header nav {
+.container-fluid {
     display: flex;
-    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#navbarNav {
     text-align: center;
-    padding-bottom: 10px;
 }
 
 header img {
-  display: none;
+    width: 40px;
+    height: 40px;
 }
 
-header a {
+.nav-item {
     text-decoration: none;
     font-weight: bold;
     color: black;
     padding: 5px 12px ;
+}
+
+.nav-item:hover {
+    text-decoration: underline;
 }
 
 header .logo a {
@@ -83,9 +103,7 @@ header .logo a:hover {
     color: black;
 }
 
-header a:hover {
-    color:darkorange;
-}
+
 
 #hero {
     display: flex;
@@ -93,7 +111,7 @@ header a:hover {
     align-items: center;
     flex-direction: column;
     text-align: center;
-    height: 120vh;
+    height: 100vh;
     color: white;
     background-image: linear-gradient(0deg, rgba(0,0,0,0.5), rgba(0,0,0,0.5))
     ,url('fotos mas alla/fotofede.jpg');
@@ -129,7 +147,7 @@ header a:hover {
 #somos-masalla .container {
     text-align: center;
     padding: 100px 12px;
-    background-color: rgb(240, 240, 203);
+    background-color: rgb(245, 245, 245);
 }
 
 #somos-masalla a {
@@ -177,7 +195,7 @@ header a:hover {
 
 .carta {
     border-radius: 10px;
-    margin: 0 10px;
+    margin: 15px;
 }
 .carta:first-child {
     background-image: linear-gradient(0deg, rgba(0,0,0,0.5), rgba(0,0,0,0.5))
@@ -472,22 +490,17 @@ footer .container {
     border-radius: 10px;
 }
 
-@media(min-width:720px ) {
+@media(min-width:990px ) {
 
     header {
         position: fixed;
         width: 100%;
+        margin: auto;
     }
 
-    header .container {
+    .container-fluid {
         flex-direction: row;
-        justify-content:space-between;
-    }
-
-    header nav {
-        flex-direction: row;
-        padding-bottom: 0;
-        padding-right: 20px;
+        justify-content: center;
     }
 
     header .container .logo{
@@ -499,7 +512,7 @@ footer .container {
         display: flex;
         width: 50px;
         height: 50px;
-        margin-left: 20px;
+        margin-left: 290px;
     }
 
     #hero {
@@ -568,9 +581,10 @@ footer .container {
 
     #nuestras-actividades .carta {
         border-radius: 20px;
-        margin: 15px;
+        margin: 10px;
         padding: 20px;
-        width: 220px;
+        width: 200px;
+        height: 180px;
     }
     
     #Donaciones .container {
