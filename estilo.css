@@ -126,9 +126,15 @@ header .logo a:hover {
 }
 
 #hero button {
-    font-size: 1.75em;
-    display: none;
+    font-size: 22px;
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    background-color: darkorange;
 }
+
+
 #hero a {
     text-decoration: none;
     color: white;
@@ -528,6 +534,10 @@ footer .container {
 
     #hero h1 {
         font-size: 4.5em;
+    }
+
+    #hero button {
+        font-size: 22px;
     }
 
     #somos-masalla .container {
